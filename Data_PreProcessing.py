@@ -9,7 +9,6 @@ for column in no_value:
   df[column]=df[column].replace(-9999,np.NaN)
   mean=int(df[column].mean(skipna=True))
   df[column]=df[column].replace(np.NaN,mean)
-
 no_zero=['SWC_F_MDS_1_QC']
 
 for column in no_zero:
